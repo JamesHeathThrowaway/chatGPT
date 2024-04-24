@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bird Watching Website</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #222; /* Increased contrast by using darker text */
+  }
+  .header {
+    background-color: #286034; /* Darker green for better contrast */
+    padding: 20px;
+    text-align: center;
+  }
+  .header a {
+    color: #fff; /* Ensured high contrast against darker background */
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+  .content {
+    display: flex;
+    justify-content: space-between;
+  }
+  .main {
+    flex: 4;
+    padding: 20px;
+  }
+  .sidebar {
+    flex: 1;
+    background-color: #d9d9d9; /* Slightly darker to improve contrast */
+    padding: 20px;
+  }
+  .card {
+    margin-bottom: 20px;
+  }
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+  .card h3 {
+    color: #286034; /* Ensured the text has sufficient contrast */
+  }
+</style>
+</head>
+<body>
+<div class="header">
+  <a href="#home">Home</a>
+  <a href="#pictures">Pictures</a>
+  <a href="#meetups">Meetups</a>
+  <a href="#moreinfo">More Information</a>
+</div>
+<div class="content">
+  <div class="main">
+    <div class="card">
+      <h2>Common Birds</h2>
+      <img src="bird1.jpg" alt="Bird 1">
+      <p>Description of bird 1...</p>
+    </div>
+    <div class="card">
+      <img src="bird2.jpg" alt="Bird 2">
+      <p>Description of bird 2...</p>
+    </div>
+    <!-- Add more birds as needed -->
+  </div>
+  <div class="sidebar">
+    <h3>About Me</h3>
+    <p>I'm a passionate bird watcher...</p>
+  </div>
+</div>
+</body>
+</html>
