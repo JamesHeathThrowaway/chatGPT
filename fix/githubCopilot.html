@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bird Watching Website</title>
+    <style>
+        body {
+            background-color: #ffffff;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: #006666;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        nav {
+            background-color: #0099cc;
+            padding: 10px;
+        }
+        nav a {
+            margin: 0 10px;
+            color: white;
+            text-decoration: none;
+        }
+        main {
+            display: flex;
+            margin: 10px;
+        }
+        .content {
+            flex: 3;
+        }
+        .sidebar {
+            flex: 1;
+            background-color: #cce6ff;
+            padding: 10px;
+        }
+        .bird {
+            display: flex;
+            margin-bottom: 10px;
+        }
+        .bird img {
+            width: 100px;
+            height: 100px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bird Watching</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Pictures</a>
+        <a href="#">Meetups</a>
+        <a href="#">More Information</a>
+    </nav>
+    <main>
+        <div class="content">
+            <h2>Common Birds</h2>
+            <div class="bird">
+                <img src="bird1.jpg" alt="Bird 1">
+                <div>
+                    <h3>Bird 1</h3>
+                    <p>Description of Bird 1</p>
+                </div>
+            </div>
+            <div class="bird">
+                <img src="bird2.jpg" alt="Bird 2">
+                <div>
+                    <h3>Bird 2</h3>
+                    <p>Description of Bird 2</p>
+                </div>
+            </div>
+            <!-- Add more birds here -->
+        </div>
+        <div class="sidebar">
+            <h2>About Me</h2>
+            <p>Your description here</p>
+        </div>
+    </main>
+</body>
+</html>
