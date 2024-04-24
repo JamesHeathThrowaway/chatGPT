@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bird Watching Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #F4F4F4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        header a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        header a.active {
+            color: #ffcc00;
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        main section {
+            flex-basis: 30%;
+            margin: 10px;
+            padding: 10px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        main section img {
+            width: 100%;
+            height: auto;
+        }
+
+        aside {
+            width: 30%;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        aside h2 {
+            color: #333;
+        }
+
+        aside p {
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#home" class="active">Home</a>
+        <a href="#pictures">Pictures</a>
+        <a href="#meetups">Meetups</a>
+        <a href="#more">More</a>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Welcome to our Bird Watching Website</h2>
+            <p>Join us to explore the world of birds and learn more about them.</p>
+        </section>
+
+        <section id="pictures">
+            <h2>Common Birds</h2>
+            <div>
+                <img src="bird1.jpg" alt="Common Bird 1">
+                <p>Description of Common Bird 1</p>
+            </div>
+            <div>
+                <img src="bird2.jpg" alt="Common Bird 2">
+                <p>Description of Common Bird 2</p>
+            </div>
+            <div>
+                <img src="bird3.jpg" alt="Common Bird 3">
+                <p>Description of Common Bird 3</p>
+            </div>
+        </section>
+
+        <section id="meetups">
+            <h2>Upcoming Meetups</h2>
+            <p>Join us for our next bird watching meetup!</p>
+        </section>
+
+        <section id="more">
+            <h2>More Information</h2>
+            <p>Learn more about bird watching and how to get started.</p>
+        </section>
+    </main>
+
+    <aside>
+        <h2>About Me</h2>
+        <p>My name is John Doe and I'm a passionate bird watcher. I created this website to share my love for birds with others.</p>
+    </aside>
+</body>
+</html>
