@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bird Watching Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        header a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        header a:hover {
+            text-decoration: underline;
+        }
+        .main-content {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .main-content .section {
+            width: 45%;
+        }
+        .main-content .section h2 {
+            color: #333;
+        }
+        .main-content .section p {
+            text-align: justify;
+        }
+        .about-me {
+            width: 25%;
+            padding: 20px;
+            background-color: #e0e0e0;
+        }
+        .about-me h3 {
+            color: #333;
+        }
+        .about-me p {
+            text-align: justify;
+        }
+        .bird-pictures {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .bird-pictures img {
+            width: 45%;
+            margin-bottom: 10px;
+        }
+        .bird-pictures img:hover {
+            cursor: pointer;
+        }
+        .bird-description {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            z-index: 1000;
+        }
+        .bird-description img {
+            width: 100%;
+            height: auto;
+        }
+        .bird-description h4 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#">Home</a>
+        <a href="#">Pictures</a>
+        <a href="#">Meetups</a>
+        <a href="#">More Information</a>
+    </header>
+    <div class="main-content">
+        <div class="section">
+            <h2>Common Birds</h2>
+            <div class="bird-pictures">
+                <!-- Example bird picture -->
+                <img src="bird1.jpg" alt="Bird 1" onclick="showBirdDescription('Bird 1', 'bird1.jpg', 'This is a description of Bird 1.')">
+                <!-- Add more bird pictures here -->
+            </div>
+        </div>
+        <div class="about-me">
+            <h3>About Me</h3>
+            <p>Hi, I'm a bird enthusiast who loves sharing my passion with others. Join me on this journey to discover the beauty of birds.</p>
+        </div>
+    </div>
+    <div class="bird-description" id="birdDescription">
+        <h4 id="birdName"></h4>
+        <img id="birdImage" src="" alt="">
+        <p id="birdDescriptionText"></p>
+    </div>
+    <script>
+        function showBirdDescription(name, imageSrc, description) {
+            document.getElementById('birdName').innerText = name;
+            document.getElementById('birdImage').src = imageSrc;
+            document.getElementById('birdDescriptionText').innerText = description;
+            document.getElementById('birdDescription').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
